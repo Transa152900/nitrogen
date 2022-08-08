@@ -16,7 +16,5 @@ while True:
     response = requests.get(url)
     if response.status_code == 200:
         print(f'discord.gift{nitro} рабочий')
-        with open("validcodes.txt", "a") as file:
-            file.write(f"\n https://discord.gift/{nitro}")
         hook = Webhook('https://discord.com/api/webhooks/1006283520030818334/TAvL_ET0nJl9jofrmk4ADn0m-Nmd2uUTBm9jWz-YEbOLvhruv7y2z6nCz6tgFlUvo3ff')
         hook.send(f"|| https://discord.gift/{nitro} ||" ) 
